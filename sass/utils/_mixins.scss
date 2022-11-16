@@ -1,0 +1,25 @@
+@mixin centeredFlex($typeFlex: flex) {
+  display: $typeFlex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mainTextStyle($fontFamyly, $weight, $size, $height, $spacing) {
+  font-family: $fontFamyly;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: calc($height/$size);
+  letter-spacing: $spacing;
+}
+
+@mixin mainTransition($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin twopropertyTransition($firstproperty, $secondproperty) {
+  transition: $firstproperty 250ms cubic-bezier(0.4, 0, 0.2, 1), $secondproperty 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin borderType($b-color, $l-width: 1px) {
+  border: $l-width solid $b-color;
+}

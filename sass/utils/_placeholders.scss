@@ -1,0 +1,88 @@
+body {
+  font-family: $fontFamyly;
+  color: $primaryTextColor;
+}
+
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+%container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 1200px;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%button {
+  width: 200px;
+  height: 50px;
+
+  background: $accentColor;
+  color: $thirdTextColor;
+
+  border-radius: 4px;
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @include mainTextStyle('Roboto', 700, 16px, 30px, 0.06em);
+}
+
+%secondTitleStyle {
+  margin-bottom: 50px;
+  text-align: center;
+  color: $primaryTextColor;
+  font-family: $fontFamyly;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+}
+
+%thirdTitleStyle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: $primaryTextColor;
+  font-family: $fontFamyly;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+
+%preTextStyle {
+  text-align: center;
+  color: $seconderyTextColor;
+  font-family: $fontFamyly;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+
+%footerContactsStyle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}

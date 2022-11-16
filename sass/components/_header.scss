@@ -1,0 +1,100 @@
+// Block-HEDAER
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  @extend %container;
+  @include centeredFlex();
+  height: 80px;
+}
+
+.header-list {
+  @include centeredFlex();
+  margin-left: 95px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__link {
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    color: $primaryTextColor;
+
+    @include mainTextStyle('Roboto', 500, 14px, 16px, 0.02em);
+
+    @include mainTransition(color);
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      outline: 0;
+    }
+  }
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -29.5px;
+  right: 0;
+
+  width: 0;
+  height: 4px;
+
+  background-color: $accentColor;
+  border-radius: 2px;
+  @include mainTransition(width);
+}
+
+.header-list__link:hover::after,
+.header-list__link:focus::after,
+.header-list__link.current::after {
+  width: 100%;
+  left: 0;
+}
+
+.current {
+  outline: 0;
+  color: $accentColor;
+}
+
+.header-contacts {
+  @include centeredFlex();
+  margin-left: auto;
+
+  &__item {
+    color: $seconderyTextColor;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__link {
+    @include centeredFlex();
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: inherit;
+    @include mainTextStyle($fontFamyly, $weight, $size, $height, 0.02em);
+
+    @include mainTransition(color);
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      outline: 0;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

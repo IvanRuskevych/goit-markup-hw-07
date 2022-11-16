@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!----------HEADER------------->
+    <header class="header">
+      <nav class="header-nav">
+        <a class="logo" lang="en" href="./index.html"><span>Web</span>Studio</a>
+        <ul class="header-list">
+          <li class="header-list__item">
+            <a class="header-list__link underline" href="./index.html">Студія</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link underline current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link underline" href="#">Контакти</a>
+          </li>
+        </ul>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
+              <svg class="header-contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="tel:+380961111111">
+              <svg class="header-contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111-11-11
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="portfolio-main">
+      <!----------CASES------------>
+      <section class="cases">
+        <div class="cases__container">
+          <h1 class="cases__title">Перелік наших робіт</h1>
+          <!--h1 - це неявний заголовок, його не має на макеті. Його буде скрито за допомогою CSS-->
+          <ul class="cases-menu">
+            <li class="cases-menu__item">
+              <button class="cases-menu__btn" type="button">Усі</button>
+            </li>
+
+            <li class="cases-menu__item">
+              <button class="cases-menu__btn" type="button">Веб-сайти</button>
+            </li>
+
+            <li class="cases-menu__item">
+              <button class="cases-menu__btn" type="button">Додатки</button>
+            </li>
+
+            <li class="cases-menu__item">
+              <button class="cases-menu__btn" type="button">Дизайн</button>
+            </li>
+
+            <li class="cases-menu__item">
+              <button class="cases-menu__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="cases-gallery">
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img
+                    class="cases-gallery__img"
+                    src="./images/website-tehno.jpg"
+                    width="370"
+                    alt="вебсайт технокряк"
+                  />
+                  <p class="cases-gallery__information">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Технокряк</h2>
+                  <p class="cases-gallery__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img
+                    class="cases-gallery__img"
+                    src="./images/basketbol.jpg"
+                    width="370"
+                    alt="Постер New Orlean vs Golden Star"
+                  />
+                  <p class="cases-gallery__information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, exercitationem explicabo
+                    illum iusto soluta.
+                  </p>
+                </div>
+                <div class="cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Постер New Orlean vs Golden Star</h2>
+                  <p class="cases-gallery__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img
+                    class="cases-gallery__img"
+                    src="./images/restaurant-seafood.jpg"
+                    width="370"
+                    alt="Ресторан Seafood"
+                  />
+                  <p class="cases-gallery__information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, exercitationem explicabo
+                    illum iusto soluta.
+                  </p>
+                </div>
+                <div class="cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Ресторан Seafood</h2>
+                  <p class="cases-gallery__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img class="cases-gallery__img" src="./images/project-prime.jpg" width="370" alt="Проєкт Prime" />
+                  <p class="cases-gallery__information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, exercitationem explicabo
+                    illum iusto soluta.
+                  </p>
+                </div>
+                <div class="div cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Проєкт Prime</h2>
+                  <p class="cases-gallery__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img class="cases-gallery__img" src="./images/project-boxes.png" width="370" alt="Проєкт Boxes" />
+                  <p class="cases-gallery__information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, exercitationem explicabo
+                    illum iusto soluta.
+                  </p>
+                </div>
+                <div class="cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Проєкт Boxes</h2>
+                  <p class="cases-gallery__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img
+                    class="cases-gallery__img"
+                    src="./images/inspiration.jpg"
+                    width="370"
+                    alt="Inspiration has no Borders"
+                  />
+                  <p class="cases-gallery__information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, exercitationem explicabo
+                    illum iusto soluta.
+                  </p>
+                </div>
+                <div class="cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Inspiration has no Borders</h2>
+                  <p class="cases-gallery__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img
+                    class="cases-gallery__img"
+                    src="./images/limited-edition.jpg"
+                    width="370"
+                    alt="Видання Limited Edition"
+                  />
+                  <p class="cases-gallery__information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, exercitationem explicabo
+                    illum iusto soluta.
+                  </p>
+                </div>
+                <div class="cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Видання Limited Edition</h2>
+                  <p class="cases-gallery__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img class="cases-gallery__img" src="./images/project-lab.jpg" width="370" alt="Проєкт LAB" />
+                  <p class="cases-gallery__information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, exercitationem explicabo
+                    illum iusto soluta.
+                  </p>
+                </div>
+                <div class="cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Проєкт LAB</h2>
+                  <p class="cases-gallery__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cases-gallery__item">
+              <a class="cases-gallery__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="cases-gallery__card">
+                  <img
+                    class="cases-gallery__img"
+                    src="./images/growing-business.jpg"
+                    width="370"
+                    alt="Growing Business"
+                  />
+                  <p class="cases-gallery__information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, exercitationem explicabo
+                    illum iusto soluta.
+                  </p>
+                </div>
+                <div class="cases-gallery__desc">
+                  <h2 class="cases-gallery__subtitle">Growing Business</h2>
+                  <p class="cases-gallery__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!---------- FOOTER ---------->
+    <footer class="footer">
+      <div class="footer__thumb">
+        <div class="footer-contacts">
+          <a class="logo footer__logo" lang="en" href="./index.html"><span>Web</span>Studio</a>
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-list__item">
+                <a
+                  class="address-list__map"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Украінки, 26
+                </a>
+              </li>
+
+              <li class="address-list__item">
+                <a class="address-list__tel" href="tel:+380961111111">+38 096 111-11-11</a>
+              </li>
+
+              <li class="address-list__item">
+                <a class="address-list__mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__socialnets">
+          <h2 class="footer__title">приєднуйтесь</h2>
+          <ul class="socialnets">
+            <li class="socialnets__item">
+              <a class="socialnets__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="socialnets__icon socialnets__icon--color" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialnets__item">
+              <a class="socialnets__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="socialnets__icon socialnets__icon--color" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialnets__item">
+              <a class="socialnets__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="socialnets__icon socialnets__icon--color" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialnets__item">
+              <a class="socialnets__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <svg class="socialnets__icon socialnets__icon--color" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-form">
+          <h2 class="footer-form__title">Підпишіться на розсилку</h2>
+          <label class="footer-form__label">
+            <input class="footer-form__signup" type="email" placeholder="E-mail" />
+            <button class="footer-form__button" type="submit">
+              Підписатися
+              <svg class="footer-form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

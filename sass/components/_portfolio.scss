@@ -1,0 +1,39 @@
+.cases {
+  @extend %section;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    @extend %visually-hidden;
+  }
+}
+.cases-menu {
+  @include centeredFlex();
+  margin-bottom: 50px;
+
+  &__item {
+  }
+  &__item + &__item {
+    margin-left: 8px;
+  }
+
+  &__btn {
+    padding: 6px 20px;
+    background: $secondaryBgColor;
+    border-radius: 4px;
+    border: none;
+
+    @include mainTextStyle($fontFamyly, 500, 16px, 26px, $spacing);
+    color: $primaryTextColor;
+
+    @include twopropertyTransition(background-color, color);
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+      color: $thirdTextColor;
+      outline: 0;
+    }
+  }
+}

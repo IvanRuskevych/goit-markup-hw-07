@@ -1,0 +1,8 @@
+.logo {
+  color: $headerLogoColor;
+  @include mainTextStyle('Raleway', 700, 26px, 31px, 0.02em);
+
+  & span {
+    color: $accentColor;
+  }
+}

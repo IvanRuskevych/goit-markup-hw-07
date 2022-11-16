@@ -1,0 +1,46 @@
+.clients {
+  @extend %section;
+
+  &__thumb {
+    @extend %container;
+  }
+
+  &__title {
+    @extend %secondTitleStyle;
+  }
+}
+.clients-list {
+  @include centeredFlex();
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__link {
+    @include centeredFlex();
+
+    width: 170px;
+    height: 92px;
+
+    @include borderType($mainIconColor, $l-width: 1px);
+    border-radius: 4px;
+
+    @include mainTransition(border-color);
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      border-color: $accentColor;
+    }
+  }
+
+  &__icon {
+    fill: $mainIconColor;
+    @include mainTransition(fill);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: $accentColor;
+  }
+}

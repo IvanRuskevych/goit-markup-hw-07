@@ -1,0 +1,81 @@
+.footer {
+  background-color: $footerBgColor;
+
+  &__thumb {
+    @extend %container;
+    @include centeredFlex();
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: baseline;
+  }
+
+  &__socialnets {
+    margin-right: 90px;
+  }
+
+  &__title {
+    @include mainTextStyle($fontFamyly, 700, $size, $height, $spacing);
+    text-transform: uppercase;
+    color: $thirdTextColor;
+  }
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.logo {
+}
+
+.footer__logo {
+  display: inline-flex;
+  margin-bottom: 20px;
+  color: $thirdTextColor;
+}
+
+.address {
+}
+
+.address-list {
+  &__item + &__item {
+    margin-top: 9px;
+  }
+
+  &__map {
+    @extend %footerContactsStyle;
+    color: $thirdTextColor;
+
+    @include mainTransition(color);
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__tel,
+  &__mailto {
+    @extend %footerContactsStyle;
+    color: $forthTextColor;
+    @include mainTransition(color);
+  }
+
+  &__tel:hover,
+  &__tel:focus,
+  &__mailto:hover,
+  &__mailto:focus {
+    color: $accentColor;
+  }
+}
+
+.socialnets {
+  &__item {
+  }
+
+  &__link {
+    background-color: $secondaryIconBgColor;
+  }
+
+  &__icon--color {
+    fill: $thirdTextColor;
+  }
+}
