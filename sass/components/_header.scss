@@ -1,11 +1,8 @@
-// Block-HEDAER
-
 .header {
   border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
-  @extend %container;
   @include centeredFlex();
   height: 80px;
 }

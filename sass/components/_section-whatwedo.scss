@@ -1,10 +1,6 @@
 .whatwedo {
   padding-bottom: 94px;
 
-  &__thumb {
-    @extend %container;
-  }
-
   &__title {
     @extend %secondTitleStyle;
   }

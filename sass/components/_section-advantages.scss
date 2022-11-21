@@ -1,13 +1,5 @@
 .advantages {
-  @extend %section;
-
-  &__thumb {
-    @extend %container;
-  }
-
-  &__title {
-    @extend %visually-hidden;
-  }
+  // @extend %section;
 }
 
 .advantages-list {
@@ -20,7 +12,7 @@
     margin-left: 30px;
   }
 
-  &__thumb {
+  &__wrap {
     @include centeredFlex();
     margin-bottom: 30px;
 

@@ -32,7 +32,6 @@
 
   &__button {
     @include centeredFlex();
-    @extend %button;
   }
 
   &__icon {

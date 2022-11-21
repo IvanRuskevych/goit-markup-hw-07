@@ -1,9 +1,5 @@
 .clients {
-  @extend %section;
-
-  &__thumb {
-    @extend %container;
-  }
+  // @extend %section;
 
   &__title {
     @extend %secondTitleStyle;

@@ -1,8 +1,7 @@
 .footer {
   background-color: $footerBgColor;
 
-  &__thumb {
-    @extend %container;
+  &__wrap {
     @include centeredFlex();
     padding-top: 60px;
     padding-bottom: 60px;

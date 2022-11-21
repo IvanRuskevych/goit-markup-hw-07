@@ -15,10 +15,6 @@
   background-position: center;
   background-size: cover;
 
-  &__thumb {
-    @extend %container;
-  }
-
   &__title {
     margin-bottom: 30px;
 
@@ -26,8 +22,5 @@
 
     @include mainTextStyle('Roboto', 900, 44px, 60px, 0.06em);
     text-transform: uppercase;
-  }
-  &__button {
-    @extend %button;
   }
 }

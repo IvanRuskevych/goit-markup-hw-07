@@ -1,10 +1,5 @@
 .team {
-  @extend %section;
   background-color: $secondaryBgColor;
-
-  &__thumb {
-    @extend %container;
-  }
 
   &__title {
     @extend %secondTitleStyle;
@@ -21,12 +16,6 @@
   }
   &__item + &__item {
     margin-left: 30px;
-  }
-
-  &__thumb {
-  }
-
-  &__cardfooter {
   }
 
   &__title {

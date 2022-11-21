@@ -24,7 +24,7 @@
   <body>
     <!---------- HEADER ---------->
     <header class="header">
-      <nav class="header-nav">
+      <nav class="header-nav container">
         <a class="logo" lang="en" href="./index.html"><span>Web</span>Studio</a>
         <ul class="header-list">
           <li class="header-list__item">
@@ -61,20 +61,20 @@
     <main class="main">
       <!---------- HERO ---------->
       <section class="hero">
-        <div class="hero__thumb">
+        <div class="hero__wrap container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
+          <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
       <!---------- OUR ADVANTAGES ---------->
-      <section class="advantages">
-        <div class="advantages__thumb">
-          <h2 class="advantages__title">Наші переваги</h2>
+      <section class="advantages section">
+        <div class="advantages__wrap container">
+          <h2 class="advantages__title visually-hidden">Наші переваги</h2>
           <!--h2 - це неявний заголовок, його не має на макеті. Його буде скрито за допомогою CSS-->
           <ul class="advantages-list">
             <li class="advantages-list__item">
-              <div class="advantages-list__thumb">
+              <div class="advantages-list__wrap">
                 <svg class="advantages-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -85,7 +85,7 @@
               </p>
             </li>
             <li class="advantages-list__item">
-              <div class="advantages-list__thumb">
+              <div class="advantages-list__wrap">
                 <svg class="advantages-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -96,7 +96,7 @@
               </p>
             </li>
             <li class="advantages-list__item">
-              <div class="advantages-list__thumb">
+              <div class="advantages-list__wrap">
                 <svg class="advantages-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -106,7 +106,7 @@
             </li>
 
             <li class="advantages-list__item">
-              <div class="advantages-list__thumb">
+              <div class="advantages-list__wrap">
                 <svg class="advantages-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -122,7 +122,7 @@
 
       <!---------- WHAT WE DO ---------->
       <section class="whatwedo">
-        <div class="whatwedo__thumb">
+        <div class="whatwedo__wrap container">
           <h2 class="whatwedo__title">Чим ми займаємося</h2>
           <ul class="whatwedo-list">
             <li class="whatwedo-list__item">
@@ -142,12 +142,12 @@
       </section>
 
       <!---------- TEAM ---------->
-      <section class="team">
-        <div class="team__thumb">
+      <section class="team section">
+        <div class="team__wrap container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <div class="team-list__thumb">
+              <div class="team-list__wrap">
                 <img src="./images/img4.jpg" width="270" alt="Ігор Дем'яненко" />
                 <div class="team-list__cardfooter">
                   <h3 class="team-list__title">Ігор Дем'яненко</h3>
@@ -186,7 +186,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <div class="team-list__thumb">
+              <div class="team-list__wrap">
                 <img src="./images/img5.jpg" width="270" alt="Ольга Рєпіна" />
                 <div class="team-list__cardfooter">
                   <h3 class="team-list__title">Ольга Рєпіна</h3>
@@ -225,7 +225,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <div class="team-list__thumb">
+              <div class="team-list__wrap">
                 <img src="./images/img6.jpg" width="270" alt="Микола Тарасов" />
                 <div class="team-list__cardfooter">
                   <h3 class="team-list__title">Микола Тарасов</h3>
@@ -264,7 +264,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <div class="team-list__thumb">
+              <div class="team-list__wrap">
                 <img src="./images/img7.jpg" width="270" alt="Михайло Єрмаков" />
                 <div class="team-list__cardfooter">
                   <h3 class="team-list__title">Михайло Єрмаков</h3>
@@ -307,8 +307,8 @@
       </section>
 
       <!---------- CLIENTS ---------->
-      <section class="clients">
-        <div class="clients__thumb">
+      <section class="clients section">
+        <div class="clients__wrap container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
@@ -360,7 +360,7 @@
 
     <!---------- FOOTER ---------->
     <footer class="footer">
-      <div class="footer__thumb">
+      <div class="footer__wrap container">
         <div class="footer-contacts">
           <a class="logo footer__logo" lang="en" href="./index.html"><span>Web</span>Studio</a>
           <address class="address">
@@ -422,7 +422,7 @@
           <h2 class="footer-form__title">Підпишіться на розсилку</h2>
           <label class="footer-form__label">
             <input class="footer-form__signup" type="email" placeholder="E-mail" />
-            <button class="footer-form__button" type="submit">
+            <button class="button footer-form__button" type="submit">
               Підписатися
               <svg class="footer-form__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>

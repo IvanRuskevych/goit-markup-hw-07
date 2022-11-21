@@ -1,13 +1,5 @@
 .cases {
-  @extend %section;
-
-  &__container {
-    @extend %container;
-  }
-
-  &__title {
-    @extend %visually-hidden;
-  }
+  // @extend %section;
 }
 .cases-menu {
   @include centeredFlex();
